@@ -1,0 +1,802 @@
+﻿@charset "UTF-8";
+/*
+ * Parent Portal Camp Styling
+ *
+ * Since Parent Portal 1.0
+ */
+
+/* 
+* Adjust 92Y CSS to work with bootstrap 
+*
+* 
+*/
+
+a.btn-sm {
+	width: initial;
+	padding: 7px 10px;
+	background-image: none;
+}
+#hidethis { /* ask about this */
+	display: none;
+}
+input.text-long {
+	width: 100%;
+}
+li.dropdown.child-select,
+.child-select li {
+	margin: 0;
+}
+p, ul, ol, dl, address {
+	font-size: inherit;
+	line-height: inherit;
+}
+fieldset.text-fields span.label, fieldset.text-fields label {
+	float: none;
+}
+
+
+/*
+ *
+ * Traveling Cart Container
+ *
+ */
+ .travelingCartContainer {
+	 font-family: Arial, Verdana, sans-serif;
+	 font-size: 11px;
+  	line-height: 16px;
+  	/*margin: 0 0 16px 0;*/
+	color: rgb(70, 70, 70);
+ }
+ div.travelingCartContainer,
+ #travelingCartLineItemList li {
+	-webkit-box-sizing: content-box;
+  	-moz-box-sizing: content-box;
+  	box-sizing: content-box;
+ }
+ .cartcountdown {
+	 line-height: 31.8999996185303px;
+ }
+ .messagebox.carttimer p {
+ 	font-size: 11px;
+  	line-height: 16px;
+	font-family: Arial, Verdana, sans-serif;
+ }
+ #travelingCartTimer .cartcountdown {
+  color: #57284c;
+  margin-right: 10px !important;
+  font-size: 30px !important;
+  line-height: 30px;
+}
+ 
+/*
+ *
+ * Addon Styling
+ *
+ */
+.text-fields input[type="radio"],
+.select-short input[type="checkbox"] {
+  margin: 2px 6px 4px 0;
+  position: absolute;
+}
+.electiveTitle {
+  font-size: 120%;
+  line-height: 1.2;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+}
+.electiveDescription {
+  display: inline-block;
+  text-align: left;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 100%;
+}
+ 
+/** 
+ * End Adjust 92Y CSS 
+ *
+ **/
+li.dropdown.child-select,
+.child-select li {
+	margin: 0;
+}
+.child-select li.list-group-item {
+	padding: 0;
+}
+.child-select li.list-group-item a {
+	font-size: 12px;
+	padding: 5px 15px;
+	display: block;
+}
+.push {
+	visibility: hidden;
+	height: 0px;
+}
+p.h4 {
+	line-height: 1.5;
+}
+body.content-page div#content {
+	padding-top: 0;
+	width: 100%;
+	position: relative;
+	padding: 0;
+	margin: 0 auto;
+	z-index: 2;
+	height: 100%;
+}
+body {
+	color: #000;
+	/*background: #F7F9FA;*/
+}
+.dropdown.open .dropdown-menu {
+	width: 100%;
+}
+.header .brand .navbar-brand {
+	letter-spacing: 0;
+}
+.brand.top-nav {
+	width: 100%;
+}
+.app > .header {
+	background-color: #fff;
+}
+#utilnav {
+	display: inline-block;
+	padding: 0 10px;
+}
+#utilnav ul {
+	list-style: none;
+	color: #4076bb;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 48px;
+	white-space: nowrap;
+	margin: 0 auto;
+	padding: 0;
+	font-family: arial, sans-serif;
+}
+#utilnav ul li {
+	display: inline;
+	margin: 0;
+	padding: 0 7px 0 9px;
+	border-left: 1px solid #fff;
+}
+#utilnav ul li:first-child {
+	padding: 0 7px 0 0;
+	border: 0;
+}
+#utilnav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+#utilnav ul li a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+#utilnav ul li span.greeting {
+	margin-right: 12px;
+	color: #70a0eb;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+	background-color: inherit;
+}
+.main-content {
+	background: #f7f9fa;
+}
+#camp-msg {
+	line-height: 30px;
+	font-weight: bold;
+}
+.alert {
+	background: #fff100;
+}
+.body-heading {
+	display: block;	
+}
+.body-heading,
+.panel-heading h5,
+.panel-heading .h5,
+.panel-heading .heading-font {
+	font-family: arial;
+	font-weight: bold;
+	font-size: 16px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0;
+}
+a.panel-body {
+	display: block;
+	padding: 18px;
+	/*font-size: 15px;*/
+	font-weight: bold;
+	position: relative;
+}
+.link-external:after {
+  content: "\e65a";
+  font-family: themify;
+  position: absolute;
+  right: 15px;
+  top: 45%;
+}
+a.panel-body:hover,
+.btn-primary:hover {
+	color: #ffffff;
+}
+.btn-primary {
+	color: #ffffff;
+	background-color: #1357a7;
+	border-color: #1357a7;
+}
+a:active, a:focus, a:hover {
+	color: #1357a7;
+}
+.child-select .ti-angle-down {
+	font-size: 20px;
+	position: absolute;
+	right: 10px;
+	top: 36%;
+	font-weight: bold;
+}
+.link-arrow:before {
+	font-family: "themify";
+	font-style: normal;
+	font-weight: bold;
+	content: "\e649";
+}
+.bg-primary-camps {
+	background-color: #315320;
+	color: #ffffff;
+}
+
+
+/* Base
+***************************************************/
+
+.app .bg-primary-camps a,
+.app .bg-primary-camps a:link,
+.app .bg-primary-camps a:visited {
+	color: #F8EC0E;
+}
+.app .bg-primary-camps a.btn-primary {
+	color: #000000;
+}
+.app .bg-primary-camps .btn-primary {
+	background-color: #fff200;
+	border-color: #fff200;
+}
+.app .bg-primary-camps .btn-primary:hover {
+	background: #40ae49;
+	color: #fff;
+	border-color: #40ae49;
+}
+.app .bg-primary-camps a:hover {
+	color: #009048;
+}
+.app >.header >.nav >li {
+	float: none;
+}
+.app > .header .navbar-toggle,
+.app > .header .nav > li > a,
+.app > .header .bg-none {
+	color: #ffffff;
+}
+.app > .header {
+	background-color: #009048;
+}
+.app > .header .navbar-nav > li > a {
+	padding-right: 40px;
+}
+.app .dropdown.open .dropdown-menu {
+	display: block;
+	border: 3px solid #009048;
+	border-top: none;
+}
+@media screen and (max-width: 767px) {
+.app > .header {
+	background-color: #009048;
+}
+.child-select .ti-angle-down {
+  font-size: 15px;
+  right: 14px;
+}
+/*.app>header .dropdown-menu {
+	border-bottom: 3px solid !important;
+}*/
+}
+@media screen and (min-width: 768px) {
+.app .header .nav > li > a:hover,
+.app .header .nav > li > a:focus,
+.app .header .nav .open > a,
+.app .header .nav .open > a:hover,
+.app .header .nav .open > a:focus {
+	background-color: #009048;
+}
+.app .child-select {
+	min-width: 240px;
+}
+.app .navbar-nav.navbar-right:last-child {
+	margin-right: 29px;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+}
+}
+@media (max-width: 319px) {
+.app > .header {
+	background-color: #009048;
+}
+}
+@media (max-width: 238px) {
+.app > .header {
+	background-image: none;
+}
+}
+/* END Base */
+
+/* Index
+***************************************************/
+
+.index.app .bg-primary-camps a:active,
+.index.app .bg-primary-camps a:focus,
+.index.app .bg-primary-camps a:hover {
+	color: #1357a7;
+}
+.index.app > .header .navbar-toggle,
+.index.app > .header .nav > li > a,
+.index.app > .header .bg-none {
+	color: #FFFFFF;
+}
+.index.app > .header {
+	background: #ffffff;
+}
+.index.app .dropdown.open .dropdown-menu {
+	display: block;
+	/*border: 3px solid #009048;*/
+	border-top: none;
+}
+.camperName.panel-heading.no-b {
+	color: #000;
+	font-size: 20px;
+	padding-left: 15px;
+}
+.campEnrollment {
+	color: #414141;
+	font-size: 12px;
+	line-height: 16px;
+	list-style: outside none none;
+	padding-bottom: 0;
+	padding-right: 0;
+}
+li.campEnrollment {
+	margin: 0;
+	padding-left: 0;
+	border-bottom: 1px solid #ccc;
+}
+.campEnrollment a {
+	color: #000000;
+	display: block;
+	padding: 8px 10px;
+	border-left: 5px solid #ccc;
+}
+.campEnrollment a:hover {
+	border-color: #ffffff;
+	background: #1357a7;
+	color: #ffffff;
+}
+.campDate {
+	display: block;
+	font-weight: normal;
+}
+/*.index.app .main-content .content-wrap .wrapper {
+	padding-top: 0;
+}*/
+.pull-left {
+    float: left !important;
+}
+@media screen and (min-width: 992px) and (max-width: 1021px) {
+.index.app .camperList.panel {
+	margin-bottom: 30px;
+	min-height: 150px;
+}
+}
+@media screen and (min-width: 768px) {
+.index.app .camperList.panel {
+	margin-bottom: 30px;
+	min-height: 180px;
+}
+.index.app .header .nav > li > a:hover,
+.index.app .header .nav > li > a:focus,
+.index.app .header .nav .open > a,
+.index.app .header .nav .open > a:hover,
+.index.app .header .nav .open > a:focus {
+	background-color: #ffffff;
+}
+.index.app .child-select {
+	min-width: 260px;
+}
+.index.app .navbar-nav.navbar-right:last-child {
+	margin-right: 29px;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+}
+}
+@media screen and (max-width: 767px) {
+.index.app > .header {
+	background: #ffffff;
+}
+.index.app li.pull-right {
+	float: none;
+	margin: 0;
+	padding: 5px 10px;
+	text-align: center;
+	width: 100%;
+}
+.index.app ul.nav.navbar-nav.navbar-right {
+	margin: 0;
+	padding: 5px 10px;
+	text-align: center;
+	width: 100%;
+	float: none;
+}
+}
+@media (max-width: 319px) {
+.index.app > .header {
+	background: #ffffff;
+}
+}
+@media (max-width: 238px) {
+.index.app > .header {
+	background-image: none;
+}
+}
+/* END Index */
+
+
+/* Common Styling outside Base
+***************************************************/
+.camp-yomi-sr.app > .header .navbar-toggle,
+.camp-yomi-sr.app > .header .nav > li > a,
+.camp-yomi-sr.app > .header .bg-none,
+.camp-yomi.app > .header .navbar-toggle,
+.camp-yomi.app > .header .nav > li > a,
+.camp-yomi.app > .header .bg-none,
+.trailblazers.app > .header .navbar-toggle,
+.trailblazers.app > .header .nav > li > a,
+.trailblazers.app > .header .bg-none,
+.camp-kesher.app > .header .navbar-toggle,
+.camp-kesher.app > .header .nav > li > a,
+.camp-kesher.app > .header .bg-none,
+.camp-kesher-jr.app > .header .navbar-toggle,
+.camp-kesher-jr.app > .header .nav > li > a,
+.camp-kesher-jr.app > .header .bg-none,
+.camp-tova.app > .header .navbar-toggle,
+.camp-tova.app > .header .nav > li > a,
+.camp-tova.app > .header .bg-none,
+.camp-bari-tov.app > .header .navbar-toggle,
+.camp-bari-tov.app > .header .nav > li > a,
+.camp-bari-tov.app > .header .bg-none,
+.camp-bereisheet.app > .header .navbar-toggle,
+.camp-bereisheet.app > .header .nav > li > a,
+.camp-bereisheet.app > .header .bg-none {
+	color: #ffffff;
+}
+
+/* YOMI
+***************************************************/
+.camp-yomi.app > .header {
+	background: #009048 center 3px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/camp-yomi_logo.png");
+}
+@media screen and (max-width: 767px) {
+.camp-yomi.app > .header {
+	background: #009048 15px 3px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/yomi_logo.png");
+}
+}
+@media screen and (min-width: 768px) {
+.camp-yomi.app .child-select {
+	min-width: 240px;
+}
+}
+@media (max-width: 319px) {
+.camp-yomi.app > .header {
+	background: #009048 15px 3px/27% no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/yomi_logo.png");
+}
+}
+@media (max-width: 238px) {
+.camp-yomi.app > .header {
+	background-image: none;
+}
+}
+/* END YOMI */
+
+/* YOMI Seniors
+***************************************************/
+.camp-yomi-sr.app > .header {
+	background: #009048 center 3px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/camp-yomi-sr_logo.png");
+}
+@media screen and (max-width: 767px) {
+.camp-yomi-sr.app > .header {
+	background: #009048 15px 3px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/yomi-sr_logo.png");
+}
+}
+@media screen and (min-width: 768px) {
+.camp-yomi-sr.app .child-select {
+	min-width: 240px;
+}
+}
+@media (max-width: 319px) {
+.camp-yomi-sr.app > .header {
+	background: #009048 15px 73px/36% no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/yomi-sr_logo.png");
+}
+}
+@media (max-width: 238px) {
+.camp-yomi-sr.app > .header {
+	background-image: none;
+}
+}
+/* END YOMI */
+
+/* Trailblazers
+***************************************************/
+.trailblazers.app > .header {
+	background: #009048 center 6px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/trailblazers_logo.png");
+}
+@media screen and (max-width: 767px) {
+.trailblazers.app > .header {
+	background: #009048 15px 15px/125px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/trailblazers_logo.png");
+}
+}
+@media screen and (min-width: 768px) {
+.trailblazers.app .child-select {
+	min-width: 240px;
+}
+}
+@media (max-width: 319px) {
+.trailblazers.app > .header {
+	background: #009048 15px 19px/39% no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/trailblazers_logo.png");
+}
+}
+@media (max-width: 238px) {
+.trailblazers.app > .header {
+	background-image: none;
+}
+}
+/* END Trailblazers */
+
+/* Bereisheet
+***************************************************/
+.camp-bereisheet.app > .header {
+	background: #009048 center 3px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/camp-bereisheet_logo.png");
+}
+@media screen and (max-width: 767px) {
+.camp-bereisheet.app > .header {
+	background: #009048 15px 3px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/bereisheet_logo.png");
+}
+}
+@media screen and (min-width: 768px) {
+.camp-bereisheet.app .child-select {
+	min-width: 240px;
+}
+}
+@media (max-width: 319px) {
+.camp-bereisheet.app > .header {
+	background: #009048 15px 72px/33% no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/bereisheet_logo.png");
+}
+}
+@media (max-width: 238px) {
+.camp-bereisheet.app > .header {
+	background-image: none;
+}
+}
+/* END Bereisheet */
+
+/* Kesher and Kesher JR
+***************************************************/
+.camp-kesher.app > .header {
+	background: #009048 center 3px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/camp-kesher_logo.png");
+}
+.camp-kesher-jr.app > .header {
+	background: #009048 center 3px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/camp-kesher-jr_logo.png");
+}
+@media screen and (max-width: 767px) {
+.camp-kesher.app > .header {
+	background: #009048 15px 3px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/kesher_logo.png");
+}
+.camp-kesher-jr.app > .header {
+	background: #009048 15px 3px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/kesher-jr_logo.png");
+}
+}
+@media screen and (min-width: 768px) {
+.camp-kesher.app .child-select,
+.camp-kesher-jr.app .child-select {
+	min-width: 240px;
+}
+}
+@media (max-width: 319px) {
+.camp-kesher.app > .header {
+	background: #009048 15px 3px/33% no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/kesher_logo.png");
+}
+.camp-kesher-jr.app > .header {
+	background: #009048 15px 3px/33% no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/kesher-jr_logo.png");
+}
+}
+@media (max-width: 238px) {
+.camp-kesher.app > .header,
+.camp-kesher-jr.app > .header {
+	background-image: none;
+}
+}
+/* END Kesher JR */
+
+/* Tova 
+***************************************************/
+.camp-tova.app > .header {
+	background: #009048 center 3px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/camp-tova_logo.png");
+}
+@media screen and (max-width: 767px) {
+.camp-tova.app > .header {
+	background: #009048 15px 3px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/tova_logo.png");
+}
+}
+@media screen and (min-width: 768px) {
+.camp-tova.app .child-select,
+.camp-bari-tov.app .child-select {
+	min-width: 240px;
+}
+}
+@media (max-width: 319px) {
+.camp-tova.app > .header {
+	background: #009048 15px 3px/22% no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/tova_logo.png");
+}
+}
+@media (max-width: 238px) {
+.camp-tova.app > .header {
+	background-image: none;
+}
+}
+/* END Tova*/
+
+/* Bari Tova 
+***************************************************/
+.camp-bari-tov.app > .header {
+	background: #009048 center 3px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/camp-bari-tov_logo.png");
+}
+@media screen and (max-width: 767px) {
+.camp-bari-tov.app > .header {
+	background: #009048 15px 3px no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/bari-tov_logo.png");
+}
+}
+@media screen and (min-width: 768px) {
+.camp-bari-tov.app .child-select {
+	min-width: 240px;
+}
+}
+@media (max-width: 319px) {
+.camp-bari-tov.app > .header {
+	background: #009048 15px 3px/33% no-repeat url("/92StreetY/media/MICROSITES/Camps/ParentPortal/bari-tov_logo.png");
+}
+}
+@media (max-width: 238px) {
+.camp-bari-tov.app > .header {
+	background-image: none;
+}
+}
+/* END Bari Tov*/
+
+/* Base Media Queries
+***************************************************/
+@media screen and (min-width: 768px) {
+div#wrapper {
+	min-height: 100%;
+	/*height: 100% !important;*/
+	margin: 0;
+	/*overflow-y: hidden;*/
+}
+.header {
+	position: relative;
+	width: 100%;
+	padding: 0;
+}
+.header .brand {
+	margin-left: 0;
+}
+.app .header-fixed + .layout {
+	padding-top: 104px;
+}
+}
+@media (max-width: 767px) {
+.app>.header>.navbar-right {
+  border-left: 1px solid #fff;
+}
+.app > .header .dropdown-menu {
+	top: 109px;
+}
+.navbar-brand {
+	height: auto;
+}
+#utilnav ul {
+	line-height: 26px;
+}
+.header .brand .navbar-brand {
+	padding-top: 4px;
+	line-height: 29px;
+}
+.app .header-fixed + .layout {
+	padding-top: 82px;
+}
+p.h4 {
+	line-height: 1.5;
+	font-size: 14px;
+}
+#camp-msg {
+	line-height: 1.5;
+	font-weight: bold;
+	font-size: 16px;
+}
+}
+@media (max-width: 319px) {
+.app .header-fixed + .layout {
+	padding-top: 118px;
+}
+.app > .header .dropdown-menu {
+	top: 117px;
+}
+#camp-msg {
+	line-height: 1.5;
+	font-weight: normal;
+	font-size: 14px;
+}
+li.dropdown.child-select a {
+	font-size: 12px;
+}
+#utilnav {
+	width: 100%;
+}
+#utilnav ul li:first-child {
+	padding: 0 7px 0 0;
+	border: 0;
+	margin-bottom: -7px;
+}
+.overflow-hidden {
+	overflow: hidden;
+	width: 100%;
+	padding: 10px 5px 0px;
+	display: block;
+}
+}
+@media (max-width: 238px) {
+.app .header-fixed + .layout {
+	padding-top: 132px;
+}
+.app > .header .dropdown-menu {
+	top: 132px;
+}
+.app>.header>.navbar-right {
+	width: 100%;
+	border-left: none;
+}
+#utilnav ul li {
+	display: block;
+	margin: 0;
+	padding: 0 7px 0 9px;
+	border-left: none;
+}
+.header.header-fixed {
+	background-image: none;
+}
+.navbar-brand {
+	padding: 0;
+}
+a.panel-body {
+	display: block;
+	padding: 18px;
+	font-size: 15px;
+	white-space: normal;
+	line-height: 18px;
+	text-align: left;
+}
+}
+</style>

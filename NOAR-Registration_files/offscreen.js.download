@@ -1,0 +1,8 @@
+var offscreen=function(){var container=$jQuery1_11(".app"),canvasDirection,direction,rapidClick=false;function hide(){container.removeClass("move-left move-right");canvasDirection="";setTimeout(function(){container.removeClass("offscreen");rapidClick=false;},300);}
+function toggle(direction){if(direction!==undefined&&direction==="rtl"){container.addClass("offscreen move-right").removeClass("move-left");canvasDirection="rtl";}else{container.addClass("offscreen move-left").removeClass("move-right");canvasDirection="ltr";}}
+function fixSlimScroll(){if(!$jQuery1_11.browser.mobile&&!sublime.checkBreakout()){if(canvasDirection==="ltr"){if($jQuery1_11(".offscreen-left").find(".slimScrollDiv").length!==0){$jQuery1_11(".offscreen-left").find(".main-navigation, .slimscroll").slimScroll({height:'auto'});}}
+if(canvasDirection==="rtl"){if($jQuery1_11(".offscreen-right").find(".slimScrollDiv").length!==0){$jQuery1_11(".offscreen-right").find(".main-navigation, .slimscroll").slimScroll({height:'auto'});}}}}
+function events(){$jQuery1_11("[data-toggle=offscreen]").on("click",function(e){e.preventDefault();e.stopPropagation();direction=$jQuery1_11(this).data("move");if(direction===canvasDirection){hide();return;}
+if(rapidClick){return;}
+rapidClick=true;toggle(direction);fixSlimScroll();});$jQuery1_11(".exit-offscreen").on("click",function(e){e.preventDefault();e.stopPropagation();hide();});}
+return{hide:hide,init:function(){events();}};}();$jQuery1_11(function(){"use strict";offscreen.init();});
