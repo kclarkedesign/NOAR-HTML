@@ -3619,7 +3619,7 @@
                                                                                                     margin-right: -15px;
                                                                                                 }
                                                                                             }
-
+                                                                                            
                                                                                             .elective-item {
                                                                                                 padding: 8px 7px;
                                                                                                 border: none;
@@ -3695,6 +3695,25 @@
                                                                                                 }
                                                                                             }
 
+                                                                                            .elective-heading {
+                                                                                                 border-style: none;
+                                                                                                 margin-right: -5px;
+                                                                                                 margin-left: -5px; 
+                                                                                            }
+
+                                                                                            .elective-heading__title {
+                                                                                                font-weight: bold;
+                                                                                                margin: 0 auto;
+                                                                                                text-align: center;
+                                                                                                display: flex;
+                                                                                                flex-flow: column;
+                                                                                                flex-wrap: wrap;
+                                                                                            }
+
+                                                                                            .elective-heading__title-detail {
+                                                                                                font-weight: normal;
+                                                                                            }
+
                                                                                             .elective-detail {
                                                                                                 padding: 0 5px;
                                                                                             }
@@ -3743,6 +3762,10 @@
                                                                                                 display: none;
                                                                                             }
 
+                                                                                            .elective-sessions {
+                                                                                                display: none;
+                                                                                            }
+
                                                                                             .mini-cart label {
                                                                                                 font-size: inherit !important;
                                                                                                 font-weight: inherit !important;
@@ -3753,6 +3776,14 @@
                                                                                                 padding: 0 35px 0 10px;
                                                                                                 margin-bottom: 10px;
                                                                                                 border: 1px solid #ddd;
+                                                                                            }
+                                                                                            .separator-grey {
+                                                                                                border-color: #ddd !important;
+                                                                                            }
+
+                                                                                            .separator-top {
+                                                                                                border-top: 1px solid;
+                                                                                                padding-top: 20px;
                                                                                             }
                                                                                             </style>
                                                                                             <div class="tab-container">
@@ -3767,6 +3798,12 @@
                                                                                                 <h2 class="day-heading mb20">Monday's Schedule</h2>
                                                                                                 <h3>Core</h3>
                                                                                                 <div class="elective-container" style="height: unset;">
+                                                                                                    <!-- Elective Header -->
+                                                                                                    <div class="elective-item elective-heading event-card">
+                                                                                                        <div class="elective-heading__title">$495 per weekday per semester <span class="elective-heading__title-detail"> Includes, clubhouse, two daily snacks, access to homework room and transportation from select schools.</span>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <!--/ Elective Header -->
                                                                                                     <!-- Elective Item -->
                                                                                                     <div class="elective-item elective-selected event-card event-card--featured">
                                                                                                         <div class="elective-title elective-item--required">
@@ -3795,7 +3832,7 @@
                                                                                                     <!-- /Elective Item -->
                                                                                                 </div>
                                                                                                 <h3 class="mt15">Electives</h3>
-                                                                                                <section class="faq u-txt-align-left">
+                                                                                                <section class="faq u-txt-align-left pt0">
                                                                                                     <!-- Art Classes -->
                                                                                                     <div class="faq__item">
                                                                                                         <div class="faq__header is-toggled js-toggle" data-toggle="elective-art" data-toggle-icon="chevron-up">
@@ -3808,6 +3845,12 @@
                                                                                                         </div>
                                                                                                         <div class="faq__content no-p" id="elective-art">
                                                                                                             <div class="elective-container">
+                                                                                                                <!-- Elective Header -->
+                                                                                                                <div class="elective-item elective-heading event-card">
+                                                                                                                    <div class="elective-heading__title">Art Center: 15 sessions: Sept 24 -Jan 14
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <!--/ Elective Header -->
                                                                                                                 <!-- Elective Item -->
                                                                                                                 <div class="elective-item elective-selected event-card is-type-school-of-the-arts event-card--featured">
                                                                                                                     <a class="elective-title elective-item--remove">
@@ -3876,6 +3919,12 @@
                                                                                                         </div>
                                                                                                         <div class="faq__content no-p" id="elective-dance">
                                                                                                             <div class="elective-container">
+                                                                                                                <!-- Elective Header -->
+                                                                                                                <div class="elective-item elective-heading event-card">
+                                                                                                                    <div class="elective-heading__title">Harkness Dance Center: 15 sessions: Sept 24-Jan 14
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <!--/ Elective Header -->
                                                                                                                 <!-- Elective Item -->
                                                                                                                 <div class="elective-item event-card is-type-dance event-card--featured">
                                                                                                                     <a class="elective-title elective-item--add">
@@ -3958,6 +4007,12 @@
                                                                                                         </div>
                                                                                                         <div class="faq__content no-p" id="elective-music">
                                                                                                             <div class="elective-container">
+                                                                                                                <!-- Elective Header -->
+                                                                                                                <div class="elective-item elective-heading event-card">
+                                                                                                                    <div class="elective-heading__title">School of Music: 15 sessions: Sept 17-Jan 15
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <!--/ Elective Header -->
                                                                                                                 <!-- Elective Item -->
                                                                                                                 <div class="elective-item event-card is-type-school-of-the-arts event-card--featured">
                                                                                                                     <a class="elective-title elective-item--add">
@@ -4113,6 +4168,12 @@
                                                                                                         </div>
                                                                                                         <div class="faq__content no-p" id="elective-sport">
                                                                                                             <div class="elective-container">
+                                                                                                                <!-- Elective Header -->
+                                                                                                                <div class="elective-item elective-heading event-card">
+                                                                                                                    <div class="elective-heading__title">May Center for Health, Fitness, and Sports (HFS): 16 sessions: Sept 17-Jan 14 <span class="elective-heading__title-detail">May Center Members (MCM) are offered reduced prices</span>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <!--/ Elective Header -->
                                                                                                                 <!-- Elective Item -->
                                                                                                                 <div class="elective-item event-card is-type-health-fitness event-card--featured">
                                                                                                                     <a class="elective-title elective-item--add">
@@ -4280,7 +4341,7 @@
                                                                                                                                     </icon>
                                                                                                                                 </button>
                                                                                                                                 <span class="mini-cart-selection__details ng-binding">
-                                                                                                                                  Girls' Recreational Gymnastics Levels I & II (Intermediate/Advanced) Combined / Ages 5-7, 8 Sessions
+                                                                                                                                  Girls' Recreational Gymnastics Levels I & II (Intermediate/Advanced) Combined / Ages 5-7
                                                                                                                                 </span>
                                                                                                                             </div>
                                                                                                                         </li>
@@ -4296,7 +4357,7 @@
                                                                                                                                     </icon>
                                                                                                                                 </button>
                                                                                                                                 <span class="mini-cart-selection__details ng-binding">
-                                                                                                                                  Sculpture and Pottery / Ages 6-8, 15 Sessions
+                                                                                                                                  Sculpture and Pottery / Ages 6-8
                                                                                                                                 </span>
                                                                                                                             </div>
                                                                                                                         </li>
@@ -4400,6 +4461,7 @@
                                                                                                     </div>
                                                                                                 </div>
                                                                                                 <!-- Conditional Option: Pickup from -->
+                                                                                                <!-- This items visibility is condtional -->
                                                                                                 <div class="col-sm-8 col-sm-offset-2">
                                                                                                     <div class="col-sm-12 no-p mb15 fieldcell">
                                                                                                         <label for="" class="label-sm mb5" style="display: block;">Picked up by 92Y Noar from</label>
@@ -4472,18 +4534,11 @@
                                                                                                 </div>
                                                                                                 <!--/ Conditional Option: Pickup from -->
                                                                                                 <!-- Confirm Parent selection/ Disclaimer -->
-                                                                                                <div class="col-xs-12 mt5 pb15 u-txt-align-left">
+                                                                                                <!-- This items visibility is condtional -->
+                                                                                                <div class="col-xs-12 mt5 u-txt-align-left">
+                                                                                                    
                                                                                                     <p>*Parents must arrange for the bus driver to hand over their child to a 92Y staff member upon arrival after 2:30 pm, and arrange with the 92Y Noar After-School Program Director for a 92Y staff member to meet their child’s bus at the entrance to 92Y. </p>
-                                                                                                    <p class="o-lead">I understand that 92nd Street Y does not accept responsibility for my child except when under direct supervisionof the appropriate 92Y employee. Direct supervision is available only at program locations during program hours. </p>
-                                                                                                    <div class="form-field form-field--checkbox form-field--checkbox__wide">
-                                                                                                        <label for="checkbox-choice-1">
-                                                                                                            <span class="label"><strong>Yes, I acknowledge and give my consent <span class="required">*</span></strong>
-                                                                                                            </span>
-                                                                                                            <input type="checkbox" name="checkbox-choice" id="checkbox-choice-1" value="choice-1">
-                                                                                                        </label>
-                                                                                                    </div>
                                                                                                 </div>
-                                                                                                <!-- Confirm Parent selection/ Disclaimer -->
                                                                                             </div>
                                                                                             <!--/ End Monday Tab -->
                                                                                             <div id="Tuesday" class="day-content day" style="display:none">
@@ -4503,46 +4558,64 @@
                                                                                                 <p>Tokyo is the capital of Japan.</p>
                                                                                             </div>
                                                                                             <script>
-                                                                                            function openDay(evt, dayName) {
-                                                                                                var i, x, tabItems;
-                                                                                                x = document.getElementsByClassName("day");
-                                                                                                for (i = 0; i < x.length; i++) {
-                                                                                                    x[i].style.display = "none";
-                                                                                                }
-                                                                                                tabItems = document.getElementsByClassName("tab-item");
-                                                                                                for (i = 0; i < x.length; i++) {
-                                                                                                    tabItems[i].className = tabItems[i].className.replace(" active", "");
-                                                                                                }
-                                                                                                document.getElementById(dayName).style.display = "block";
-                                                                                                evt.currentTarget.className += " active";
+                                                                                                function openDay(evt, dayName) {
+                                                                                                    var i, x, tabItems;
+                                                                                                    x = document.getElementsByClassName("day");
+                                                                                                    for (i = 0; i < x.length; i++) {
+                                                                                                        x[i].style.display = "none";
+                                                                                                    }
+                                                                                                    tabItems = document.getElementsByClassName("tab-item");
+                                                                                                    for (i = 0; i < x.length; i++) {
+                                                                                                        tabItems[i].className = tabItems[i].className.replace(" active", "");
+                                                                                                    }
+                                                                                                    document.getElementById(dayName).style.display = "block";
+                                                                                                    evt.currentTarget.className += " active";
                                                                                             }
                                                                                             </script>
+                                                                                            <!-- Confirm Parent selection/ Disclaimer -->
+                                                                                            <div class="col-xs-12 mt5 pb15 u-txt-align-left separator-grey separator-top">
+                                                                                                <!-- This item is shown on final selected day or visible across all tabs -->
+                                                                                               
+                                                                                                <p class="o-lead">I understand that 92nd Street Y does not accept responsibility for my child except when under direct supervisionof the appropriate 92Y employee. Direct supervision is available only at program locations during program hours. </p>
+                                                                                                <div class="form-field form-field--checkbox form-field--checkbox__wide">
+                                                                                                    <label for="checkbox-choice-1">
+                                                                                                        <span class="label"><strong>Yes, I acknowledge and give my consent <span class="required">*</span></strong>
+                                                                                                        </span>
+                                                                                                        <input type="checkbox" name="checkbox-choice" id="checkbox-choice-1" value="choice-1">
+                                                                                                    </label>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <!-- Confirm Parent selection/ Disclaimer -->
                                                                                             <!--/ Program Selection -->
                                                                                             <div class="form-group form-group-sm">
+                                                                                                <!-- Prev Button -->
                                                                                                 <div class="col-xs-4 pull-left">
                                                                                                     <input type="submit" name="ctl00$primaryContentArea$plcZones$lt$webPartZone$ChooseCamps_Widget$btnAddParent1" value="Prev" id="ctl00_primaryContentArea_plcZones_lt_webPartZone_ChooseCamps_Widget_btnAddParent1" class="btn btn-primary">
                                                                                                     <span style="position: absolute; padding-left: 5px; padding-top: 5px;">
-                                        <div id="ctl00_primaryContentArea_plcZones_lt_webPartZone_ChooseCamps_Widget_UpdateProgress3" style="display:none;" role="status" aria-hidden="true">
-                                          <div class="payment-progress-message">
-                                              <div class="message-content">
-                                                  <img src="./NOAR-Registration_files/loading.gif" alt="" style="width: 20px;">
-                                              </div>
-                                          </div>
-                                        </div>
-                                    </span>
+                                                                                                        <div id="ctl00_primaryContentArea_plcZones_lt_webPartZone_ChooseCamps_Widget_UpdateProgress3" style="display:none;" role="status" aria-hidden="true">
+                                                                                                          <div class="payment-progress-message">
+                                                                                                              <div class="message-content">
+                                                                                                                  <img src="./NOAR-Registration_files/loading.gif" alt="" style="width: 20px;">
+                                                                                                              </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                    </span>
                                                                                                 </div>
+                                                                                                <!--/ Prev Button -->
+                                                                                                <!-- Next Button -->
                                                                                                 <div class="col-xs-4 pull-right u-txt-align-right">
                                                                                                     <input type="submit" name="ctl00$primaryContentArea$plcZones$lt$webPartZone$ChooseCamps_Widget$btnAddParent1" value="Next" id="ctl00_primaryContentArea_plcZones_lt_webPartZone_ChooseCamps_Widget_btnAddParent1" class="btn btn-primary">
                                                                                                     <span style="position: absolute; padding-left: 5px; padding-top: 5px;">
-                                        <div id="ctl00_primaryContentArea_plcZones_lt_webPartZone_ChooseCamps_Widget_UpdateProgress3" style="display:none;" role="status" aria-hidden="true">
-                                          <div class="payment-progress-message">
-                                              <div class="message-content">
-                                                  <img src="./NOAR-Registration_files/loading.gif" alt="" style="width: 20px;">
-                                              </div>
-                                          </div>
-                                        </div>
-                                    </span>
+                                                                                                        <div id="ctl00_primaryContentArea_plcZones_lt_webPartZone_ChooseCamps_Widget_UpdateProgress3" style="display:none;" role="status" aria-hidden="true">
+                                                                                                          <div class="payment-progress-message">
+                                                                                                              <div class="message-content">
+                                                                                                                  <img src="./NOAR-Registration_files/loading.gif" alt="" style="width: 20px;">
+                                                                                                              </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                    </span>
                                                                                                 </div>
+                                                                                                <!--/ Next Button -->
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
