@@ -3580,6 +3580,13 @@
                                                                                                 /*
                                    max-width: 750px;*/
                                                                                             }
+                                                                                            /*.elective-container {
+                                                                                                background-image: radial-gradient(ellipse farthest-corner at center top,rgba(0,0,0,.15) 0,transparent 75%),radial-gradient(ellipse farthest-corner at center bottom,rgba(0,0,0,.15) 0,transparent 75%);
+                                                                                                background-size: 100% 10px;
+                                                                                                background-repeat: no-repeat;
+                                                                                                background-attachment: scroll;
+                                                                                                background-position: top,bottom;
+                                                                                            }*/
 
                                                                                             @media (max-width: 40em) {
                                                                                                 .elective-container {
@@ -3785,6 +3792,12 @@
                                                                                                 border-top: 1px solid;
                                                                                                 padding-top: 20px;
                                                                                             }
+                                                                                            .message--reminder {
+                                                                                                color: #fff;
+                                                                                                background-color: #5FA9E0;
+                                                                                                border-color: #9bca9c;
+                                                                                                font-weight: bold;
+                                                                                            }
                                                                                             </style>
                                                                                             <div class="tab-container">
                                                                                                 <a class="tab-item active" onclick="openDay(event,'Monday')">Mon<span class="hidden-xs">day</span></a>
@@ -3795,8 +3808,8 @@
                                                                                             </div>
                                                                                             <!-- Begin Monday Tab -->
                                                                                             <div id="Monday" class="day-content day">
-                                                                                                <h2 class="day-heading mb20">Monday's Schedule</h2>
-                                                                                                <h3>Core</h3>
+                                                                                                <h2 class="day-heading mb20">Kent's Monday's Schedule</h2>
+                                                                                                <h3>Monday Clubhouse</h3>
                                                                                                 <div class="elective-container" style="height: unset;">
                                                                                                     <!-- Elective Header -->
                                                                                                     <div class="elective-item elective-heading event-card">
@@ -3807,12 +3820,12 @@
                                                                                                     <!-- Elective Item -->
                                                                                                     <div class="elective-item elective-selected event-card event-card--featured">
                                                                                                         <div class="elective-title elective-item--required">
-                                                                                                            <span class="elective-title__txt">Clubhouse (Required)</span>
+                                                                                                            <span class="elective-title__txt">Clubhouse (Included)</span>
                                                                                                             <!-- <div class="elective-selected--pill">Step 1</div> -->
                                                                                                         </div>
                                                                                                         <div class="elective-actions">
-                                                                                                            <!-- <span class="elective-detail elective-sessions">4 Sessions</span>
-                                                                                                            <span class="elective-detail elective-price">$160.00</span> -->
+                                                                                                            <!-- <span class="elective-detail elective-sessions">4 Sessions</span> -->
+                                                                                                            <span class="elective-detail elective-price">$495.00</span>
                                                                                                             <a class="btn btn--slim" target="_blank" href="#">More info <i class="fa fa-external-link"></i></a>
                                                                                                         </div>
                                                                                                     </div>
@@ -3820,7 +3833,7 @@
                                                                                                     <!-- Elective Item -->
                                                                                                     <div class="elective-item elective-selected event-card event-card--featured">
                                                                                                         <a class="elective-title elective-item--remove">
-                                                                                                          <span class="elective-title__txt">Homework</span>
+                                                                                                          <span class="elective-title__txt">Homework (Complimentary)</span>
                                     
                                                                                                         </a>
                                                                                                         <div class="elective-actions">
@@ -3831,7 +3844,110 @@
                                                                                                     </div>
                                                                                                     <!-- /Elective Item -->
                                                                                                 </div>
-                                                                                                <h3 class="mt15">Electives</h3>
+                                                                                                <!--/ End Clubhouse -->
+
+                                                                                                <section class="container-fluid">
+                                                                                                    <h3 class="mt25 no-p">
+                                                                                                       Monday Transportation — Getting to 92Y Noar
+                                                                                                    </h3>
+                                                                                                    <!-- Choose Transportation -->
+                                                                                                    <div class="col-sm-6 col-sm-offset-3">
+                                                                                                        <div class="col-sm-12 no-p mb15 fieldcell">
+                                                                                                            <label class="col-sm-12 no-p label-sm">On Monday's my child will be <span class="required">*</span></label>
+                                                                                                            <select class="txtBox txtBox_sht form-control" style="width:300px;">
+                                                                                                                <option value="-1">Select an option</option>
+                                                                                                                <option value="677083">Picked up by 92Y Noar from</option>
+                                                                                                                <option value="733836">Brought to 92Y by private bus*</option>
+                                                                                                                <option value="0">Brought to 92Y by parent/caregiver</option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <!-- Conditional Option: Pickup from -->
+                                                                                                    <!-- This items visibility is condtional -->
+                                                                                                    <div class="col-sm-8 col-sm-offset-2">
+                                                                                                        <div class="col-sm-12 no-p mb15 fieldcell">
+                                                                                                            <label for="" class="label-sm mb5" style="display: block;">Picked up by 92Y Noar from</label>
+                                                                                                            <div class="alignleft col-wrapper">
+                                                                                                                <div class="radio-col">
+                                                                                                                    <input id="1" type="radio" name="loc" value="" checked="checked">
+                                                                                                                    <label for="1">PS 6</label>
+                                                                                                                </div>
+                                                                                                                <div class="radio-col">
+                                                                                                                    <input id="2" type="radio" name="loc" value="">
+                                                                                                                    <label for="2">PS 77</label>
+                                                                                                                </div>
+                                                                                                                <div class="radio-col">
+                                                                                                                    <input id="3" type="radio" name="loc" value="">
+                                                                                                                    <label for="3">PS 151</label>
+                                                                                                                </div>
+                                                                                                                <div class="radio-col">
+                                                                                                                    <input id="4" type="radio" name="loc" value="">
+                                                                                                                    <label for="4">PS 158</label>
+                                                                                                                </div>
+                                                                                                                <div class="radio-col">
+                                                                                                                    <input id="5" type="radio" name="loc" value="">
+                                                                                                                    <label for="5">PS 171</label>
+                                                                                                                </div>
+                                                                                                                <div class="radio-col">
+                                                                                                                    <input id="6" type="radio" name="loc" value="">
+                                                                                                                    <label for="6">PS 183</label>
+                                                                                                                </div>
+                                                                                                                <div class="radio-col">
+                                                                                                                    <input id="7" type="radio" name="loc" value="">
+                                                                                                                    <label for="7">PS 198</label>
+                                                                                                                </div>
+                                                                                                                <div class="radio-col">
+                                                                                                                    <input id="8" type="radio" name="loc" value="">
+                                                                                                                    <label for="8">PS 290</label>
+                                                                                                                </div>
+                                                                                                                <div class="radio-col">
+                                                                                                                    <input id="9" type="radio" name="loc" value="">
+                                                                                                                    <label for="9">PS 527</label>
+                                                                                                                </div>
+                                                                                                                <div class="radio-col">
+                                                                                                                    <input id="10" type="radio" name="loc" value="">
+                                                                                                                    <label for="10">CPE 2</label>
+                                                                                                                </div>
+                                                                                                                <div class="radio-col">
+                                                                                                                    <input id="11" type="radio" name="loc" value="">
+                                                                                                                    <label for="11">Hunter Elementary</label>
+                                                                                                                </div>
+                                                                                                                <div class="radio-col">
+                                                                                                                    <input id="12" type="radio" name="loc" value="">
+                                                                                                                    <label for="12">La Scuola D’Italia</label>
+                                                                                                                </div>
+                                                                                                                <div class="radio-col">
+                                                                                                                    <input id="13" type="radio" name="loc" value="">
+                                                                                                                    <label for="13">TAG Scholars</label>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <!-- <select class="form-control">
+                                                                                                             <option value="">Please select a location</option>
+                                                                                                             <option value="">PS 6</option>
+                                                                                                             <option value="">PS 77</option>
+                                                                                                             <option value="">PS 151</option>
+                                                                                                             <option value="">PS 158</option>
+                                                                                                             <option value="">PS 171</option>
+                                                                                                             <option value="">PS 183</option>
+                                                                                                             <option value="">PS 198</option>
+                                                                                                             <option value="">PS 198</option>
+                                                                                                           </select> -->
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <!--/ Conditional Option: Pickup from -->
+                                                                                                    <!-- Confirm Parent selection/ Disclaimer -->
+                                                                                                    <!-- This items visibility is condtional -->
+                                                                                                    <div class="col-xs-12 mt5 u-txt-align-left">
+                                                                                                        
+                                                                                                        <p>*Parents must arrange for the bus driver to hand over their child to a 92Y staff member upon arrival after 2:30 pm, and arrange with the 92Y Noar After-School Program Director for a 92Y staff member to meet their child’s bus at the entrance to 92Y. </p>
+                                                                                                    </div>
+                                                                                                </section>
+
+                                                                                                <!-- Enrichment Classes -->
+                                                                                                <h3 class="mt15">Monday Enrichment Classes</h3>
+                                                                                                <div class="message message--reminder">
+                                                                                                    Kent is signed up for (X) private lesson(s)
+                                                                                                </div>
                                                                                                 <section class="faq u-txt-align-left pt0">
                                                                                                     <!-- Art Classes -->
                                                                                                     <div class="faq__item">
@@ -3846,10 +3962,10 @@
                                                                                                         <div class="faq__content no-p" id="elective-art">
                                                                                                             <div class="elective-container">
                                                                                                                 <!-- Elective Header -->
-                                                                                                                <div class="elective-item elective-heading event-card">
+                                                                                                                <!-- <div class="elective-item elective-heading event-card">
                                                                                                                     <div class="elective-heading__title">Art Center: 15 sessions: Sept 24 -Jan 14
                                                                                                                     </div>
-                                                                                                                </div>
+                                                                                                                </div> -->
                                                                                                                 <!--/ Elective Header -->
                                                                                                                 <!-- Elective Item -->
                                                                                                                 <div class="elective-item elective-selected event-card is-type-school-of-the-arts event-card--featured">
@@ -3920,10 +4036,10 @@
                                                                                                         <div class="faq__content no-p" id="elective-dance">
                                                                                                             <div class="elective-container">
                                                                                                                 <!-- Elective Header -->
-                                                                                                                <div class="elective-item elective-heading event-card">
+                                                                                                                <!-- <div class="elective-item elective-heading event-card">
                                                                                                                     <div class="elective-heading__title">Harkness Dance Center: 15 sessions: Sept 24-Jan 14
                                                                                                                     </div>
-                                                                                                                </div>
+                                                                                                                </div> -->
                                                                                                                 <!--/ Elective Header -->
                                                                                                                 <!-- Elective Item -->
                                                                                                                 <div class="elective-item event-card is-type-dance event-card--featured">
@@ -4008,10 +4124,10 @@
                                                                                                         <div class="faq__content no-p" id="elective-music">
                                                                                                             <div class="elective-container">
                                                                                                                 <!-- Elective Header -->
-                                                                                                                <div class="elective-item elective-heading event-card">
+                                                                                                                <!-- <div class="elective-item elective-heading event-card">
                                                                                                                     <div class="elective-heading__title">School of Music: 15 sessions: Sept 17-Jan 15
                                                                                                                     </div>
-                                                                                                                </div>
+                                                                                                                </div> -->
                                                                                                                 <!--/ Elective Header -->
                                                                                                                 <!-- Elective Item -->
                                                                                                                 <div class="elective-item event-card is-type-school-of-the-arts event-card--featured">
@@ -4170,7 +4286,7 @@
                                                                                                             <div class="elective-container">
                                                                                                                 <!-- Elective Header -->
                                                                                                                 <div class="elective-item elective-heading event-card">
-                                                                                                                    <div class="elective-heading__title">May Center for Health, Fitness, and Sports (HFS): 16 sessions: Sept 17-Jan 14 <span class="elective-heading__title-detail">May Center Members (MCM) are offered reduced prices</span>
+                                                                                                                    <div class="elective-heading__title"><!-- May Center for Health, Fitness, and Sports (HFS): 16 sessions: Sept 17-Jan 14  --><span class="elective-heading__title-detail">May Center Members (MCM) are offered reduced prices</span>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                                 <!--/ Elective Header -->
@@ -4445,100 +4561,7 @@
                                                                                                     </div>
                                                                                                     <!--/Mini Cart -->
                                                                                                 </section>
-                                                                                                <h3 class="mt10">
-                               Monday Transportation — Getting to 92Y Noar
-                              </h3>
-                                                                                                <!-- Choose Transportation -->
-                                                                                                <div class="col-sm-6 col-sm-offset-3">
-                                                                                                    <div class="col-sm-12 no-p mb15 fieldcell">
-                                                                                                        <label class="col-sm-12 no-p label-sm">On Monday's my child will be <span class="required">*</span></label>
-                                                                                                        <select class="txtBox txtBox_sht form-control" style="width:300px;">
-                                                                                                            <option value="-1">Select an option</option>
-                                                                                                            <option value="677083">Picked up by 92Y Noar from</option>
-                                                                                                            <option value="733836">Brought to 92Y by private bus*</option>
-                                                                                                            <option value="0">Brought to 92Y by parent/caregiver</option>
-                                                                                                        </select>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <!-- Conditional Option: Pickup from -->
-                                                                                                <!-- This items visibility is condtional -->
-                                                                                                <div class="col-sm-8 col-sm-offset-2">
-                                                                                                    <div class="col-sm-12 no-p mb15 fieldcell">
-                                                                                                        <label for="" class="label-sm mb5" style="display: block;">Picked up by 92Y Noar from</label>
-                                                                                                        <div class="alignleft col-wrapper">
-                                                                                                            <div class="radio-col">
-                                                                                                                <input id="1" type="radio" name="loc" value="" checked="checked">
-                                                                                                                <label for="1">PS 6</label>
-                                                                                                            </div>
-                                                                                                            <div class="radio-col">
-                                                                                                                <input id="2" type="radio" name="loc" value="">
-                                                                                                                <label for="2">PS 77</label>
-                                                                                                            </div>
-                                                                                                            <div class="radio-col">
-                                                                                                                <input id="3" type="radio" name="loc" value="">
-                                                                                                                <label for="3">PS 151</label>
-                                                                                                            </div>
-                                                                                                            <div class="radio-col">
-                                                                                                                <input id="4" type="radio" name="loc" value="">
-                                                                                                                <label for="4">PS 158</label>
-                                                                                                            </div>
-                                                                                                            <div class="radio-col">
-                                                                                                                <input id="5" type="radio" name="loc" value="">
-                                                                                                                <label for="5">PS 171</label>
-                                                                                                            </div>
-                                                                                                            <div class="radio-col">
-                                                                                                                <input id="6" type="radio" name="loc" value="">
-                                                                                                                <label for="6">PS 183</label>
-                                                                                                            </div>
-                                                                                                            <div class="radio-col">
-                                                                                                                <input id="7" type="radio" name="loc" value="">
-                                                                                                                <label for="7">PS 198</label>
-                                                                                                            </div>
-                                                                                                            <div class="radio-col">
-                                                                                                                <input id="8" type="radio" name="loc" value="">
-                                                                                                                <label for="8">PS 290</label>
-                                                                                                            </div>
-                                                                                                            <div class="radio-col">
-                                                                                                                <input id="9" type="radio" name="loc" value="">
-                                                                                                                <label for="9">PS 527</label>
-                                                                                                            </div>
-                                                                                                            <div class="radio-col">
-                                                                                                                <input id="10" type="radio" name="loc" value="">
-                                                                                                                <label for="10">CPE 2</label>
-                                                                                                            </div>
-                                                                                                            <div class="radio-col">
-                                                                                                                <input id="11" type="radio" name="loc" value="">
-                                                                                                                <label for="11">Hunter Elementary</label>
-                                                                                                            </div>
-                                                                                                            <div class="radio-col">
-                                                                                                                <input id="12" type="radio" name="loc" value="">
-                                                                                                                <label for="12">La Scuola D’Italia</label>
-                                                                                                            </div>
-                                                                                                            <div class="radio-col">
-                                                                                                                <input id="13" type="radio" name="loc" value="">
-                                                                                                                <label for="13">TAG Scholars</label>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                        <!-- <select class="form-control">
-                                                                                                         <option value="">Please select a location</option>
-                                                                                                         <option value="">PS 6</option>
-                                                                                                         <option value="">PS 77</option>
-                                                                                                         <option value="">PS 151</option>
-                                                                                                         <option value="">PS 158</option>
-                                                                                                         <option value="">PS 171</option>
-                                                                                                         <option value="">PS 183</option>
-                                                                                                         <option value="">PS 198</option>
-                                                                                                         <option value="">PS 198</option>
-                                                                                                       </select> -->
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <!--/ Conditional Option: Pickup from -->
-                                                                                                <!-- Confirm Parent selection/ Disclaimer -->
-                                                                                                <!-- This items visibility is condtional -->
-                                                                                                <div class="col-xs-12 mt5 u-txt-align-left">
-                                                                                                    
-                                                                                                    <p>*Parents must arrange for the bus driver to hand over their child to a 92Y staff member upon arrival after 2:30 pm, and arrange with the 92Y Noar After-School Program Director for a 92Y staff member to meet their child’s bus at the entrance to 92Y. </p>
-                                                                                                </div>
+                                                                                                
                                                                                             </div>
                                                                                             <!--/ End Monday Tab -->
                                                                                             <div id="Tuesday" class="day-content day" style="display:none">
@@ -4589,7 +4612,7 @@
                                                                                             <!--/ Program Selection -->
                                                                                             <div class="form-group form-group-sm">
                                                                                                 <!-- Prev Button -->
-                                                                                                <div class="col-xs-4 pull-left">
+                                                                                                <!-- <div class="col-xs-4 pull-left">
                                                                                                     <input type="submit" name="ctl00$primaryContentArea$plcZones$lt$webPartZone$ChooseCamps_Widget$btnAddParent1" value="Prev" id="ctl00_primaryContentArea_plcZones_lt_webPartZone_ChooseCamps_Widget_btnAddParent1" class="btn btn-primary">
                                                                                                     <span style="position: absolute; padding-left: 5px; padding-top: 5px;">
                                                                                                         <div id="ctl00_primaryContentArea_plcZones_lt_webPartZone_ChooseCamps_Widget_UpdateProgress3" style="display:none;" role="status" aria-hidden="true">
@@ -4600,7 +4623,7 @@
                                                                                                           </div>
                                                                                                         </div>
                                                                                                     </span>
-                                                                                                </div>
+                                                                                                </div> -->
                                                                                                 <!--/ Prev Button -->
                                                                                                 <!-- Next Button -->
                                                                                                 <div class="col-xs-4 pull-right u-txt-align-right">
